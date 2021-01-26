@@ -12,8 +12,12 @@ class App(tk.Tk):
         # Initialize parameters
         ROW = 0
 
+        self.title = 'DoubleKiller'
         self.folder = ''
 
+        ROW += 1
+        self.text1 = tk.Label(self, text='1. Select folder')
+        self.text1.grid(row=ROW, column=0)
         ROW += 1
         # self.EntrySelectFolder = tk.Entry(self, width=44)
         # self.EntrySelectFolder.grid(row=ROW, column=0)
